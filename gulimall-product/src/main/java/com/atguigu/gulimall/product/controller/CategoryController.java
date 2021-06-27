@@ -31,9 +31,9 @@ public class CategoryController {
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params) {
 
-     List<CategoryEntity> entities = categoryService.listWithTree();
+     List<CategoryEntity> entities1 = categoryService.listWithTree();
 
-        return R.ok().put("data", entities);
+        return R.ok().put("data", entities1);
     }
 
 
